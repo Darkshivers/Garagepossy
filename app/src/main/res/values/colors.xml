@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#e61920</color>
+    <color name="colorPrimaryDark">#d41616</color>
+    <color name="colorAccent">#3e2830</color>
+    <color name="Evergreen">#88BC24</color>
+    <color name="Landsail">#0A3E78</color>
+    <color name="Davanti">#EB5D0B</color>
+
+</resources>

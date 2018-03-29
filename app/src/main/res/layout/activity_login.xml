@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.oaktyres.oakpartnershipapp.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imgSplash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/loginbackground" />
+
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="E-mails"
+        android:inputType="textPersonName"
+        android:text="ribbleviewgarage@btconnect.com"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <EditText
+        android:id="@+id/Key"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:text="RvTD_531"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSplash"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="LOGIN"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSplash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.561"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Key"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <Button
+        android:id="@+id/forgotpassword"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary"
+        android:text="Forgot your password?"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSplash"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.126" />
+
+    <TextView
+        android:id="@+id/tverror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Key" />
+
+    <ImageView
+        android:id="@+id/ivEmail"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgSplash"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/User"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456"
+        app:srcCompat="@android:drawable/stat_sys_warning" />
+
+    <ImageView
+        android:id="@+id/ivKEY"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgSplash"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/User"
+        app:layout_constraintTop_toBottomOf="@+id/ivEmail"
+        app:layout_constraintVertical_bias="0.142"
+        app:srcCompat="@android:drawable/stat_sys_warning" />
+
+
+</android.support.constraint.ConstraintLayout>
